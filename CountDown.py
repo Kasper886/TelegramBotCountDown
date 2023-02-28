@@ -27,12 +27,12 @@ def timer(message):
         hours = datetime.datetime.fromtimestamp(t).strftime('%H')
         mins = datetime.datetime.fromtimestamp(t).strftime('%M')
         secs = datetime.datetime.fromtimestamp(t).strftime('%S')
-        bot.edit_message_text(chat_id=message.chat.id,  message_id=msg_id, text=f'До окончания скидки на создание сайта Авенирычу осталось: \n00 дн. {hours} ч. {mins} мин. {secs} сек.')
+        bot.edit_message_text(chat_id=message.chat.id,  message_id=msg_id, text=f'Discount is expired in: \n00 дн. {hours} ч. {mins} мин. {secs} сек.')
         sleep(5)
 
-    bot.edit_message_text(chat_id=message.chat.id, message_id=msg_id, text='Время вышло!')
+    bot.edit_message_text(chat_id=message.chat.id, message_id=msg_id, text='Time is up!')
 
-"""
+""" If you need timer instead of countdown uncomment this code and comment previous
 def counter(message):
     msg = bot.send_message(chat_id=message.chat.id, text='Count start')
     sleep(1)
