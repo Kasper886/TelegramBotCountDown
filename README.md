@@ -10,4 +10,5 @@ finish = datetime.datetime(2023,2,26,21,59,59)
 ```
 bot = telebot.TeleBot("Your Bot API HERE")
 ```
-3. run /start in your telegram app chat.
+3. Run /start in your telegram app chat.
+4. If you don't have a server, you can keep your code here https://pythonanywhere.com/
